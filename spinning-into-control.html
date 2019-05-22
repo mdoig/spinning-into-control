@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spinning Into Control | Marshall Doig</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="resources/marshall_photo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Marshall Doig
+        </a>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-white", style='background-image: url(http://vinylgif.com/gifs/201411/parlophone-vinyl-spinning.gif); background-size: cover; background-position-y: center'>
+            <div class="container">
+              <h1 class="display-5">Spinning Into Control</h1>
+              <p class="lead">How I Used Data to Plan a Vinyl Collection and Learn Other Musical Facts About Myself</p>
+              <div class = 'row'>
+                <p class = 'col-md-6'>
+                    I don't know how I didn't see it coming, but since moving to the Austin area several years ago,
+                    my love for and enjoyment of music have deepened. Exposure to the scene here has also expanded
+                    my tastes and reignited some dormant ones.
+                    <br>
+                    <br>
+                    Eventually, I started to think about what I could do to really go deeper on my music consumption
+                    and appreciation. I arrived at vinyl. First, though, I needed a turntable and some records to spin on it. With a little research, getting 
+                    the turntable would be the easy part, but how would I choose what records to buy to start my collection?
+                </p>
+              </div>      
+            </div>
+          </div>
+        
+    <div class="container-fluid text-center">    
+        <div class="row">
+            <div class="col-sm text-center">
+                <h4>Facing the music</h4>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center">
+                <p>First, I had to figure out an efficient way to rate each album. I devised my own formula (more details 
+                    on <a href="" target="_blank">GitHub</a>) to produce an album rating on a 100-point scale. With the formula set, 
+                    I started listening to all the music, transferred the ratings to a CSV file, and plotted the results. Using my 
+                    results as a guide, I've purchased three albums already.</p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class='col-sm-8 tableauPlaceholder' id='viz1558503778599' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Favoritealbums&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpinningIntoControl&#47;Favoritealbums' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Favoritealbums&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1558503778599');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm text-center">
+                <h4>Lining up the acts</h4>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center">
+                <p>With so many ratings for individual albums, I had plenty of data to play with to look at other aspects of my 
+                    musical preferences. My first instinct was to try to devise a way to rank my favorite artists. After many
+                    iterations, I found another formula that not only seemed to be pretty fair but also stacked up my favorites
+                    like I had hand-picked the list myself. Note that artists were only included once I listened to their full 
+                    discography (that is, all studio albums, for simplicity). Essentially, the artist-ranking formula tries to 
+                    take into account the quality of an artist's full discography and individual songs. An artist's 
+                    minimum, median, and maximum album rating contribute to a final ranking score in addition to a normalized 
+                    mesaure of how many outstanding (or "starred", in this case) tracks I think an artist has made. (Again, 
+                    for details on the full formula, visit the repository.)
+                </p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class='col-sm-8 tableauPlaceholder' id='viz1558506334655' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Favoriteartists&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpinningIntoControl&#47;Favoriteartists' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Favoriteartists&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1558506334655');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm text-center">
+                <h4>Mixing the rest</h4>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center">
+                <p>Once I finished laboring over the creation of two formulas, I was free to look at more straightforward items. 
+                    Below are six more charts that each examine a different aspect of my data.
+                </p>
+                <br>
+                <p>I've listened to at least one album recorded in every year since 1962, but I have listened to a lot more 
+                    albums that have been recorded in my lifetime (circa the 1990s).
+                </p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class='col-sm-8 tableauPlaceholder' id='viz1558510120203' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Albumsbyyearofrelease&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpinningIntoControl&#47;Albumsbyyearofrelease' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Albumsbyyearofrelease&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1558510120203');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center">
+                <p>Was I likelier to rate an album more highly based on the year it was released? My favorite decades appear to be
+                    the 2010s, 2000s, and the 1970s. Not too high on the '90s, though.
+                </p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class='tableauPlaceholder' id='viz1558514570800' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Ratingbydecade&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpinningIntoControl&#47;Ratingbydecade' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Ratingbydecade&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1558514570800');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center">
+                <p>I didn't join a music streaming service until 2016. Joining Spotify clearly allowed me to massively increase 
+                    my music consumption — the number of albums per year I listened to for the first time ever ramped up starting 
+                    in 2016. Before that, I relied on my own purchases (CDs or iTunes) and shared music from friends 
+                    (files or burned CDs).
+                </p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class='col-sm-8 tableauPlaceholder' id='viz1558511559535' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Albumsbyyearoffirstlisten&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpinningIntoControl&#47;Albumsbyyearoffirstlisten' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Albumsbyyearoffirstlisten&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1558511559535');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center">
+                <p><a href='https://www.nytimes.com/2018/02/10/opinion/sunday/favorite-songs.html'>Some analysis has shown</a> 
+                    that our strongest musical preferences set in around age 13 (for women) or 14 (for men). Did the year in 
+                    which I first heard an album (recorded at any time) mean I was likelier to give it a higher rating? It seems so,
+                    but the earlier years also benefit from containing a significantly lower number of albums than the last few years.
+                </p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class='col-sm-8 tableauPlaceholder' id='viz1558511598725' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Ratingbyyearoffirstlisten&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpinningIntoControl&#47;Ratingbyyearoffirstlisten' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Ratingbyyearoffirstlisten&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1558511598725');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center">
+                <p>I tend to have a more positive reaction when seeing an album is a nice, tight 40 or so minutes long before 
+                    listening to it. Did my ratings reflect this preference? It looks like it. Make an album between 30 and 70 minutes
+                    long, and it's possible I'll be happier with it.
+                </p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class='col-sm-8 tableauPlaceholder' id='viz1558514522165' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Ratingbylengthofalbum&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpinningIntoControl&#47;Ratingbylengthofalbum' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Ratingbylengthofalbum&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1558514522165');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center">
+                <p>Additionally, I wanted to see if there is a specific track count that I prefer an album to have. Eight or nine is 
+                    the sweet spot, but they and the next top two track lengths (14 and 17) might have an advantage from having fewer 
+                    albums than the middle options (10 to 13).
+                </p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class='col-sm-8 tableauPlaceholder' id='viz1558514408681' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Ratingbynumberoftracksperalbum&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpinningIntoControl&#47;Ratingbynumberoftracksperalbum' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpinningIntoControl&#47;Ratingbynumberoftracksperalbum&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1558514408681');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm text-center">
+                <h4>Running out the groove</h4>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center">
+                <p>What I enjoy about this endeavor is that it's a living project. I'll never be done with it; I get to keep adding 
+                    data. As I continue to listen to music, I'll keep this page updated, and I'll note any changes to the data. 
+                    Thanks for taking a look!
+                </p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <br>
+    </div>
+    <footer class="container-fluid text-center">
+        <p>&#169; 2019 Marshall Doig</p>
+    </footer>
+        
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
